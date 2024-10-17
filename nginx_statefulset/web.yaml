@@ -51,7 +51,7 @@ spec:
         - name: shared-volume
           mountPath: /nginx-data
         command: ["/bin/sh", "-c"]
-        args: ["echo Hello from container $HOSTNAME > /nginx-data/index.html"]
+        args: ["echo Hello from Afro-IT-container $HOSTNAME > /nginx-data/index.html"]
       containers:
       - name: nginx
         image: k8s.gcr.io/nginx-slim:0.8
